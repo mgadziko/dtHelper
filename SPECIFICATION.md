@@ -87,6 +87,17 @@ The first version favors accurate relative location and rapid scanning over a
 pixel-perfect photographic reproduction. It must not imply that any on-screen
 knob or switch is interactive.
 
+The Manual v1.2 front-panel image establishes the initial layout inventory:
+
+- Global: AMP MOD SENSE, P-MOD SENSE, P-BEND RANGE, MW AMP RANGE, MW PITCH
+  RANGE, FB LEVEL, TRANSPOSE, PORTA TIME, plus PORTA MODE and PORTA ON.
+- Second row: ALGORITHM, DELAY, PAN, REVERB, CHORUS, POLY/MONO, and INIT.
+- LFO: WAVEFORM, SPEED, DELAY, PITCH, AMP, MOD SOURCE, and SYNC.
+- Operator rows: WAVE; the envelope controls; EG BIAS and EG SHIFT; KEY VEL;
+  DETUNE; fixed-frequency controls; LEVEL; scaling; frequency; and AMP MOD.
+- Right-side bank: Operator Select and Operator On/Off controls for Operators
+  1 through 4.
+
 ### 3.5 Operator behavior
 
 - The display reflects the DT-81z's four operators.
@@ -108,6 +119,18 @@ knob or switch is interactive.
 - Emulating a disconnected DT-81z.
 
 ## 5. Future direction (not version 1 requirements)
+
+### 5.1 DX100 session export
+
+- On launch, dtHelper may silently request one current-voice bulk dump from a
+  configured DX100 endpoint solely to establish a session baseline.
+- After receiving and validating the 101-byte Yamaha single-voice response,
+  dtHelper may save the edited session as a Forest-compatible `.dxv` file.
+- The file preserves the fetched channel, 93-byte DX100 VCED payload, and a
+  recalculated Yamaha checksum.
+- Only control messages with a confirmed DX100 VCED-byte mapping update that
+  export buffer. TX81Z-only and effect parameters remain outside the file and
+  must be reported to the user at save time.
 
 A later interactive mode may make the on-screen knobs and toggles operate as
 a virtual DT-81z when the hardware is disconnected. That mode will require a

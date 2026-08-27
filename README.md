@@ -1,8 +1,8 @@
 # dtHelper
 
 `dtHelper` is a native macOS companion app for the DTronics DT-81z hardware
-programmer. Its first release is a read-only monitor: it observes the DT-81z's
-MIDI output and presents the current observed control values as LCD-style
+programmer. It observes the DT-81z's MIDI output, routes it to selected MIDI
+destinations when requested, and presents current control values as LCD-style
 readouts arranged to match the physical controller.
 
 The goal is to make a DT-81z session legible at a glance without replacing the
@@ -11,7 +11,14 @@ working when the hardware is not attached.
 
 ## Status
 
-Planning and specification. No application code has been created yet.
+The panel decodes the captured DT-81z map, animates the virtual knobs, and can
+silently fetch the current DX100 voice as a session baseline. After a valid
+DX100 fetch, **Save DX Voice…** writes a Forest-compatible `.dxv` file.
+
+The save uses the fetched 93-byte DX100 voice buffer, preserves its channel,
+and recalculates the Yamaha checksum. It incorporates only DT-81z messages
+with an exact DX100 voice-buffer mapping. TX81Z-only/effect changes are named
+in the save status rather than silently written into an incompatible voice.
 
 ## Hardware connection
 
@@ -28,6 +35,6 @@ The authoritative initial product and technical requirements are in
 
 ## Scope boundary
 
-This repository will begin as a monitor, not a MIDI router, patch librarian,
-or DX100 editor. Those capabilities can be considered later only when they do
-not compromise the monitor's clear, dependable read-only behavior.
+dtHelper is not a patch librarian or a replacement DX100 editor. It saves the
+current DT-81z session as a portable `.dxv` file for Forest Editor to open and
+manage.

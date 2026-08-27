@@ -1,0 +1,61 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+/* Begin PBXBuildFile section */
+		D10001 /* dtHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20001 /* dtHelperApp.swift */; };
+		D10002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20002 /* ContentView.swift */; };
+		D10003 /* PanelComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20003 /* PanelComponents.swift */; };
+		D10004 /* AboutBoxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20004 /* AboutBoxController.swift */; };
+		D10005 /* DT81zMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20006 /* DT81zMonitor.swift */; };
+		D10006 /* DX100VoiceBaseline.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20007 /* DX100VoiceBaseline.swift */; };
+		D10007 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = D20008 /* AppIcon.icns */; };
+		D10008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20009 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+/* Begin PBXFileReference section */
+		D20000 /* dtHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = dtHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20001 /* dtHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dtHelperApp.swift; sourceTree = "<group>"; };
+		D20002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D20003 /* PanelComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelComponents.swift; sourceTree = "<group>"; };
+		D20004 /* AboutBoxController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutBoxController.swift; sourceTree = "<group>"; };
+		D20005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20006 /* DT81zMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DT81zMonitor.swift; sourceTree = "<group>"; };
+		D20007 /* DX100VoiceBaseline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DX100VoiceBaseline.swift; sourceTree = "<group>"; };
+		D20008 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Resources/AppIcon.icns; sourceTree = "<group>"; };
+		D20009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+/* Begin PBXFrameworksBuildPhase section */
+		D30001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+/* Begin PBXGroup section */
+		D40000 = {isa = PBXGroup; children = (D40001 /* dtHelper */, D20008 /* AppIcon.icns */, D40002 /* Products */); sourceTree = "<group>"; };
+		D40001 /* dtHelper */ = {isa = PBXGroup; children = (D20001 /* dtHelperApp.swift */, D20002 /* ContentView.swift */, D20003 /* PanelComponents.swift */, D20004 /* AboutBoxController.swift */, D20006 /* DT81zMonitor.swift */, D20007 /* DX100VoiceBaseline.swift */, D20009 /* Assets.xcassets */, D20005 /* Info.plist */); path = dtHelper; sourceTree = "<group>"; };
+		D40002 /* Products */ = {isa = PBXGroup; children = (D20000 /* dtHelper.app */); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+/* Begin PBXNativeTarget section */
+		D50000 /* dtHelper */ = {isa = PBXNativeTarget; buildConfigurationList = D60001 /* Build configuration list for PBXNativeTarget "dtHelper" */; buildPhases = (D70001 /* Sources */, D30001 /* Frameworks */, D70002 /* Resources */); buildRules = (); dependencies = (); name = dtHelper; productName = dtHelper; productReference = D20000 /* dtHelper.app */; productType = "com.apple.product-type.application"; };
+/* End PBXNativeTarget section */
+/* Begin PBXProject section */
+		D80000 /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1600; LastUpgradeCheck = 1600; TargetAttributes = {D50000 = {CreatedOnToolsVersion = 16.0;};};}; buildConfigurationList = D60000 /* Build configuration list for PBXProject "dtHelper" */; compatibilityVersion = "Xcode 15.0"; developmentRegion = en; knownRegions = (en, Base); mainGroup = D40000; productRefGroup = D40002 /* Products */; projectDirPath = ""; projectRoot = ""; targets = (D50000 /* dtHelper */); };
+/* End PBXProject section */
+/* Begin PBXSourcesBuildPhase section */
+		D70001 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (D10001 /* dtHelperApp.swift in Sources */, D10002 /* ContentView.swift in Sources */, D10003 /* PanelComponents.swift in Sources */, D10004 /* AboutBoxController.swift in Sources */, D10005 /* DT81zMonitor.swift in Sources */, D10006 /* DX100VoiceBaseline.swift in Sources */); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+/* Begin PBXResourcesBuildPhase section */
+		D70002 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (D10007 /* AppIcon.icns in Resources */, D10008 /* Assets.xcassets in Resources */); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+/* Begin XCBuildConfiguration section */
+		D90001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; SDKROOT = macosx; SWIFT_OPTIMIZATION_LEVEL = "-Onone";}; name = Debug; };
+		D90002 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; SDKROOT = macosx; SWIFT_OPTIMIZATION_LEVEL = "-O";}; name = Release; };
+		D90003 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = dtHelper/Info.plist; MACOSX_DEPLOYMENT_TARGET = 14.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.gadzikowski.dtHelper; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0;}; name = Debug; };
+		D90004 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = dtHelper/Info.plist; MACOSX_DEPLOYMENT_TARGET = 14.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.gadzikowski.dtHelper; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0;}; name = Release; };
+/* End XCBuildConfiguration section */
+/* Begin XCConfigurationList section */
+		D60000 /* Build configuration list for PBXProject "dtHelper" */ = {isa = XCConfigurationList; buildConfigurations = (D90001 /* Debug */, D90002 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		D60001 /* Build configuration list for PBXNativeTarget "dtHelper" */ = {isa = XCConfigurationList; buildConfigurations = (D90003 /* Debug */, D90004 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = D80000 /* Project object */;
+}
