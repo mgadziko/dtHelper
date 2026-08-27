@@ -25,18 +25,18 @@ struct ContentView: View {
     private var header: some View {
         VStack(spacing: 10) {
             HStack {
-            VStack(alignment: .leading, spacing: 3) {
-                Text("dtHelper").font(.title3.weight(.semibold))
-                Text("DT-81z read-only monitor").font(.caption).foregroundStyle(.secondary)
-            }
-            Spacer()
+                VStack(alignment: .leading, spacing: 3) {
+                    Text("dtHelper").font(.title3.weight(.semibold))
+                    Text("DT-81z read-only monitor").font(.caption).foregroundStyle(.secondary)
+                }
+                Spacer()
                 Circle().fill(monitor.lastMessage == "No MIDI received" ? Color.orange : Color.green).frame(width: 8, height: 8)
                 Text(monitor.status).font(.caption).foregroundStyle(.secondary)
             }
 
             HStack(alignment: .top, spacing: 18) {
                 VStack(alignment: .leading, spacing: 5) {
-                    Text("Routing").font(.caption.weight(.bold))
+                    PanelHeading(title: "Routing")
                     Text("DT-81z input: \(monitor.sources.first(where: { $0.id == monitor.selectedSourceID })?.name ?? "None")").font(.caption)
                     ForEach(monitor.destinations) { destination in
                         Toggle(destination.name, isOn: Binding(get: { monitor.selectedDestinationIDs.contains(destination.id) }, set: { _ in monitor.toggleDestination(destination.id) }))
@@ -130,7 +130,7 @@ struct ContentView: View {
         .padding(12)
         .frame(width: 820)
         .background(RoundedRectangle(cornerRadius: 10).fill(Color(nsColor: .controlBackgroundColor)))
-        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(red: 0.73, green: 0.12, blue: 0.12), lineWidth: 2))
+        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(nsColor: .separatorColor).opacity(0.45), lineWidth: 1))
     }
 
     @ViewBuilder
