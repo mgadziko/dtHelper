@@ -26,7 +26,7 @@ The connected DT-81z appears to macOS as a bidirectional CoreMIDI endpoint
 named `Dtronics DT-81z` over USB-C. The supplied DT-81z Manual v1.2 also
 documents USB-to-PC MIDI SysEx transfer for firmware updates. Version 1 listens
 to that endpoint; it does not require the DT-81z to be connected through a
-Scarlett MIDI port.
+DIN-style MIDI port.
 
 ## Product specification
 
